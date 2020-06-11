@@ -44,13 +44,13 @@ type TemplateInputs struct {
 func (t TemplateInputs) RenderImports(imports ...string) string {
 	allImports := make(map[string]struct{})
 	for _, i := range t.Imports {
-		allImports[i] = struct{}{}
+		allImports[strings.TrimSpace(i)] = struct{}{}
 	}
 	for _, i := range imports {
 		if i[len(i)-1] != '"' {
 			i = `"` + i + `"`
 		}
-		allImports[i] = struct{}{}
+		allImports[strings.TrimSpace(i)] = struct{}{}
 	}
 	var out []string
 	for i := range allImports {
