@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/SergiiShapoval/gowrap/generator"
 	minimock "github.com/gojuno/minimock/v3"
-	"github.com/hexdigest/gowrap/generator"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 )

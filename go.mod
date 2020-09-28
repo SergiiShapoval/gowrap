@@ -1,4 +1,6 @@
-module github.com/hexdigest/gowrap
+module github.com/SergiiShapoval/gowrap
+
+go 1.14
 
 require (
 	github.com/gojuno/minimock/v3 v3.0.4

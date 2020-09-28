@@ -7,8 +7,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/hexdigest/gowrap"
-	"github.com/hexdigest/gowrap/loader"
+	"github.com/SergiiShapoval/gowrap"
+	"github.com/SergiiShapoval/gowrap/loader"
 )
 
 func init() {
